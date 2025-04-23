@@ -71,11 +71,15 @@ Model mencapai **akurasi keseluruhan: 97.57%** pada data uji, dengan performa pe
 
 - **Akurasi total**: 97.57%  
 - **Rata-rata F1-score**: 97.57%
+  
 ---
 ## 💡 Kesimpulan
+
 Model berhasil mengklasifikasikan gambar hewan dari 10 kelas dengan performa tinggi. Dengan memanfaatkan transfer learning dari EfficientNetV2S serta augmentasi data, model mampu mencapai akurasi lebih dari 97% meskipun dataset memiliki kompleksitas tinggi.
+
 ---
 ## 🚀 Teknologi yang Digunakan
+
 - Python
 - TensorFlow / Keras
 - EfficientNetV2S (pre-trained model)
