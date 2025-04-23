@@ -40,7 +40,7 @@ model = models.Sequential([
     layers.Dense(256, activation="relu"),
     layers.Dropout(0.5),
     layers.Dense(10, activation="softmax")
-])```
+])
 
 ## 🔧 Compile & Training
 python
