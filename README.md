@@ -41,13 +41,42 @@ model = models.Sequential([
     layers.Dropout(0.5),
     layers.Dense(10, activation="softmax")
 ])
-
+```
+---
 ## 🔧 Compile & Training
-python
-Salin
-Edit
+```python
 model.compile(
     optimizer="adam",
     loss="categorical_crossentropy",
     metrics=["accuracy"]
 )
+```
+---
+## 📊 Hasil Evaluasi
+
+Model mencapai **akurasi keseluruhan: 97.57%** pada data uji, dengan performa per kelas sebagai berikut:
+
+| Kelas       | Precision | Recall | F1-score |
+|-------------|-----------|--------|----------|
+| Anjing      | 0.9649    | 0.9821 | 0.9735   |
+| Ayam        | 0.9928    | 0.9857 | 0.9892   |
+| Domba       | 0.9472    | 0.9607 | 0.9539   |
+| Gajah       | 0.9755    | 0.9964 | 0.9859   |
+| Kucing      | 0.9892    | 0.9786 | 0.9838   |
+| Kuda        | 0.9852    | 0.9536 | 0.9691   |
+| Kupu-kupu   | 0.9927    | 0.9750 | 0.9838   |
+| Laba-laba   | 0.9821    | 0.9821 | 0.9821   |
+| Sapi        | 0.9505    | 0.9607 | 0.9556   |
+| Tupai       | 0.9786    | 0.9821 | 0.9804   |
+
+- **Akurasi total**: 97.57%  
+- **Rata-rata F1-score**: 97.57%
+---
+## 💡 Kesimpulan
+Model berhasil mengklasifikasikan gambar hewan dari 10 kelas dengan performa tinggi. Dengan memanfaatkan transfer learning dari EfficientNetV2S serta augmentasi data, model mampu mencapai akurasi lebih dari 97% meskipun dataset memiliki kompleksitas tinggi.
+---
+## 🚀 Teknologi yang Digunakan
+- Python
+- TensorFlow / Keras
+- EfficientNetV2S (pre-trained model)
+- Google Colab / Jupyter Notebook
